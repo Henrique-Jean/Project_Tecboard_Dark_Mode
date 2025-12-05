@@ -1,0 +1,100 @@
+
+
+
+*{
+    margin: 0; /* Reset de margin e padding para todos os elementos */
+    padding: 0;
+}
+
+/*estilo Desktop*/
+body{
+    background-color: #0E1014; /* Cor de fundo da página */
+    color: #ffffff; /* Cor do texto padrão */ 
+}
+
+
+header img{
+    display: block; /* Exibe a imagem como um bloco */
+    margin: 50px 60px 0 200px; /* Margem superior e esquerda da imagem */
+}
+
+
+h1{
+    font-family:"unbounded", sans-serif; /* Fonte do título */
+    font-weight: bold; /* Peso da fonte do título */
+    font-size: 64px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o texto do título */
+    margin-top: 60px;/* Espaçamento superior do título */
+}
+
+h1 span{
+    color: #9747FF; /* Cor do texto do span dentro do título */
+}
+
+p{
+    font-family: "Poppins", sans-serif; /* Fonte do parágrafo */
+    font-weight: 400; /* Peso da fonte do parágrafo */
+    font-size: 24px; /* Tamanho da fonte do parágrafo */
+    text-align: center; /* Centraliza o texto do parágrafo */
+    margin: 24px auto 0;
+    width: 792px; /* Espaçamento superior do parágrafo */
+}
+
+a{
+    color: #ffffff; /* Cor do texto do link */
+    font-size: 24px; /* Tamanho da fonte do link */
+    font-family: "Poppins", sans-serif; /* Fonte do link */
+    text-decoration: none; /* Remove o sublinhado do link */ 
+    background-color: #9747FF; /* Cor de fundo do link */
+    width: 340px; /* Largura do link */
+    height: 66px; /* Altura do link */
+    display: block; /* Exibe o link como um bloco */
+    text-align: center; /* Centraliza o texto do link */
+    line-height: 66px; /* Alinha verticalmente o texto do link */
+    border-radius: 36px; /* Bordas arredondadas do link */
+    margin: 40px auto; /* Espaçamento superior e centralização do link */
+}
+
+a:hover{
+    background-color: #8233E8; /* Cor de fundo do link ao passar o mouse */
+}
+
+section img{
+    display: block; /* Exibe a imagem como um bloco */
+    width: 792px; /* Largura da imagem */
+    height: 446px; /* Altura da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+/*estilo Tablet*/
+@media(max-width: 768px){
+    header img{
+        margin: 60px 0 0 60px;
+    }
+    p{
+        width: 648px;
+    }
+}
+
+/*estilo Mobile*/
+@media(max-width: 375px){
+    header img{
+        margin: 32px 0 0 16px;
+    }
+    h1{
+        font-size: 40px;
+
+    }
+    p{
+        font-size: 20px;
+    }
+    a{
+        font-size: 20px;
+        width: 251px;
+    }
+
+    section img{
+        width: 341px;
+        height: 230px;
+    }
+}
